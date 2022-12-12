@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { StyleSheet, Text, View, SafeAreaView, FlatList, Dimensions, Image, TouchableWithoutFeedback, TouchableOpacity, ScrollView } from 'react-native';
-import { FontAwesome, AntDesign } from '@expo/vector-icons';
+import { FontAwesome, AntDesign,EvilIcons } from '@expo/vector-icons';
 import cardItemList  from '../Consts/cardItemList';
 import Appheader from '../components/Appheader';
+import SwipSlider from '../components/Swipslider';
 
 
 const width = (Dimensions.get("screen").width/2) - 15
@@ -64,6 +65,8 @@ const HomePage = ({navigation}) => {
       <SafeAreaView style={{backgroundColor: "#fff"}}>
         <Appheader onSearch={handleSearch} navigator={navigation.navigate} />
       </SafeAreaView>
+      <ScrollView>
+<SwipSlider/>
       <FlatList 
           style={{paddingHorizontal: 5, paddingBottom: 100, flex: 1}} 
           showsHorizontalScrollIndicator={false}
@@ -74,7 +77,16 @@ const HomePage = ({navigation}) => {
           numColumns={2} 
           data={cardItemList1} 
           renderItem={({item}) => <CardItem cardItemList={item} onPressed={()=>navigation.navigate("SinglePage", item)} />} />
-
+</ScrollView>
+{/* <Text></Text> */}
+{/* <View style={{height:50,width:"100%",backgroundColor:"blue"}}>
+  <View>
+    <TouchableOpacity onPress={()=> user ? navigator("MyAccount") : navigator('LoginPage')}>
+        <AntDesign name="user" size={24} color="white" style={{ marginRight: 10 }} />
+    </TouchableOpacity></View>
+  <View></View>
+  <View></View>
+</View> */}
    </View>
 
   )

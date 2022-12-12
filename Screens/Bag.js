@@ -26,7 +26,7 @@ const Bag = ({ navigation }) =>
             {/* <Appheader /> */}
             <View >
                 <TouchableOpacity onPress={navigation.goBack}>
-                    <View style={{padding: 10,  flexDirection: 'row', alignItems: 'center', marginTop: 50, justifyContent: 'space-between',borderBottomWidth: 0.5,borderBottomColor: '#eee'}}>
+                    <View style={{padding: 10,  flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',borderBottomWidth: 0.5,borderBottomColor: '#eee'}}>
                         <Entypo name="chevron-thin-left" size={27} color="#777" />
                         {/* <FontAwesome name={isFavorite ? "heart" : "heart-o"} size={27} color={'#7770'} /> */}
                         <TouchableOpacity onPress={()=>navigation.navigate('HomePage', storeItems)}>
@@ -36,8 +36,8 @@ const Bag = ({ navigation }) =>
                             </View>
                         </TouchableOpacity>
                         <View style={{flexDirection: "row"}}>
-                            {/* <TouchableOpacity style={{marginRight: 15}} onPress={()=>setIsFavorite(!isFavorite)} >    */}
-                                {/* <FontAwesome name={isFavorite ? "heart" : "heart-o"} size={27} color={isFavorite ? 'rgb(426,42,68)' : '#777'} />
+                             {/* <TouchableOpacity style={{marginRight: 15}} onPress={()=>setIsFavorite(!isFavorite)} >    
+                                <FontAwesome name={isFavorite ? "heart" : "heart-o"} size={27} color={isFavorite ? 'rgb(426,42,68)' : '#777'} />
                             </TouchableOpacity> */}
                             <TouchableOpacity>
                                 <SimpleLineIcons name="handbag" size={29} color="#777" />
@@ -76,7 +76,7 @@ const Bag = ({ navigation }) =>
                             
                             <View style={{ marginTop: 10, flexDirection: 'row' }}>
                                 <View>
-                                    <Entypo name="resize-100-" size={14} color="#777" />
+                                    <Entypo name="resize-100" size={16} color="#777" />
                                 </View>
                                 <Text style={{ marginLeft: 3, color: '#777', fontSize: 12, marginRight: 19 }}>Chỉnh size</Text>
                                 <AntDesign name="close" size={16} color="#777" />

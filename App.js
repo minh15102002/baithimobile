@@ -51,7 +51,6 @@ import
     Poppins_900Black_Italic,
 } from '@expo-google-fonts/poppins';
 
-// import Singleproductpage from './Screens/singleProductPage';
 import SingleProductPage from './Screens/singleProductPage';
 import Bag from './Screens/Bag';
 import { BagProvider } from './providers/bagProvider';

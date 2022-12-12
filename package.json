@@ -12,6 +12,7 @@
     "@expo-google-fonts/noto-serif": "^0.2.0",
     "@expo-google-fonts/poppins": "^0.2.0",
     "@expo/webpack-config": "^0.17.2",
+    "@react-navigation/drawer": "^6.5.4",
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
     "expo": "^47.0.0",

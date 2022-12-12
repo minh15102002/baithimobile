@@ -37,7 +37,7 @@ const Checkout = ({ navigation }) =>
                 </View>
                 <View style={[ { }]}>
                         <Text style={{ fontWeight: 'bold', fontSize: 18, textAlign:'center', marginVertical:10 }}>
-                            Shipping
+                            Giao hàng
                         </Text>
                     <View style={[styles.inputShadow, { padding: 10, backgroundColor: 'white', borderRadius: 6 }]}>
                         <View style={{flexDirection:'row'}}>

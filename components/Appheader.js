@@ -5,7 +5,7 @@ import cardItemList  from '../Consts/cardItemList';
 import { useAuth } from '../providers/AuthProvider';
 
 
-const Appheader = ({onSearch, navigator ,}) =>
+const Appheader = ({onSearch, navigator}) =>
 {
   const { user } = useAuth();
 
@@ -50,10 +50,10 @@ const Appheader = ({onSearch, navigator ,}) =>
           style={{
             width: "100%",
             height:25,
-            // borderRadius:"font",
-            backgroundColor: "#fff",
-            // borderColor:"black",
             flexDirection: "row",
+            borderRadius: 8,
+            backgroundColor:'#74858C',
+            alignItems: "center",
           }}
         >
             <TouchableOpacity >

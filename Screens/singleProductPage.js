@@ -17,13 +17,13 @@ const SingleProductPage = ({ navigation, route }) =>
         Object.keys(cardItemList.images).filter(key=> key !== "imageMain")[0]
     );
 
-    // partSize
+    // Size
     const [partSize, setPartSize] = useState(cardItemList.partSize[0]);
-    // density
+    // ti trong
     const [density, setDensity] = useState(cardItemList.density[0]);
-    // stretched length
+    // chiều dài
     const [stretchedLength, setStretchedLength] = useState(cardItemList.stretchedLength[0]);
-    // quantity
+    // so luong
     const [quantity, setQuantity] = useState(1);
 
     useEffect(()=>{

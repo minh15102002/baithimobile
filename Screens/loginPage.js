@@ -37,7 +37,7 @@ const Loginpage = ({ navigation }) =>
         navigation.navigate("MyAccount");
       } else
       {
-        setError("Tai khoan khong ton tai");
+        setError("Tài khoản không tồn tại");
         setTimeout(() => setError(""), 2500);
       }
     }
