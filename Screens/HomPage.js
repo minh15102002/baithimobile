@@ -4,6 +4,7 @@ import { FontAwesome, AntDesign,EvilIcons } from '@expo/vector-icons';
 import cardItemList  from '../Consts/cardItemList';
 import Appheader from '../components/Appheader';
 import SwipSlider from '../components/Swipslider';
+import CategoryList from '../components/CategoryList';
 
 
 const width = (Dimensions.get("screen").width/2) - 15
@@ -64,29 +65,22 @@ const HomePage = ({navigation}) => {
     <View style={{flex: 1, backgroundColor: '#fff'}}>
       <SafeAreaView style={{backgroundColor: "#fff"}}>
         <Appheader onSearch={handleSearch} navigator={navigation.navigate} />
+        <CategoryList/>
       </SafeAreaView>
       <ScrollView>
 <SwipSlider/>
+
       <FlatList 
           style={{paddingHorizontal: 5, paddingBottom: 100, flex: 1}} 
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{
-            marginTop: 10,
+            marginTop: 5,
             paddingBottom: 50,
           }}
           numColumns={2} 
           data={cardItemList1} 
           renderItem={({item}) => <CardItem cardItemList={item} onPressed={()=>navigation.navigate("SinglePage", item)} />} />
 </ScrollView>
-{/* <Text></Text> */}
-{/* <View style={{height:50,width:"100%",backgroundColor:"blue"}}>
-  <View>
-    <TouchableOpacity onPress={()=> user ? navigator("MyAccount") : navigator('LoginPage')}>
-        <AntDesign name="user" size={24} color="white" style={{ marginRight: 10 }} />
-    </TouchableOpacity></View>
-  <View></View>
-  <View></View>
-</View> */}
    </View>
 
   )
